@@ -9,4 +9,8 @@ class Dish <ApplicationRecord
       ingredient.name
     end
   end
+
+  def total_calories
+    ingredients.sum {|ingredient| ingredient.calories}
+  end
 end
