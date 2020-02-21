@@ -1,3 +1,4 @@
 <h1><%= @chef.name %></h1>
 
+<p>Most Popular Ingredients: <%= @chef.most_popular %></p>
 <%=link_to "See Ingredients", "/chefs/#{@chef.id}/ingredients", method: :get%>
